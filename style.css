@@ -2,7 +2,7 @@
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
   --color-accent: #ff3400;
-  --color-heading: #1b0760;
+  --color-heading: #817e8d;
   --color-body: #918ca4;
 }
 /* topography */
@@ -51,26 +51,56 @@ p {
   }
 }
 /* links */
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-.link-arrow{
-    color: var(--color-accent);
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 2rem;
+.link-arrow {
+  color: var(--color-accent);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
 }
-.link-arrow::after{
-    content: "-->";
-    margin-left: 4px;
-    transition: margin 0.15s;
+.link-arrow::after {
+  content: "-->";
+  margin-left: 4px;
+  transition: margin 0.15s;
 }
-.link-arrow:hover::after{
-    margin-left: 8px;
+.link-arrow:hover::after {
+  margin-left: 8px;
 }
 
-@media screen and (min-width:1024px) {
-    .link-arrow{
-        font-size: 1.4rem;
-    }
+@media screen and (min-width: 1024px) {
+  .link-arrow {
+    font-size: 1.4rem;
+  }
 }
+/* badges */
+.badge {
+  border-radius: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+  white-space: nowrap;
+}
+.badge--primary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+.badge--secondary {
+  background-color: var(--color-secondary);
+  color: #fff;
+}
+.badge--small{
+    font-size: 1.6rem;
+
+}
+@media screen and (min-width: 1024px) {
+    .badge {
+      font-size: 1.5rem;
+    }
+  
+    .badge--small {
+      font-size: 1.2rem;
+    }
+  }
+  
