@@ -303,3 +303,20 @@ a {
   }
 }
 
+/* Media */
+.media{
+  display: flex;
+}
+.media__title{
+  margin-top: 1rem;
+}
+.media__image{
+  width: 30px;
+  border: 2px solid red;
+  display: inline-block;
+  height: 30px;
+  margin-top: 1rem;
+}
+.media__body{
+  margin:0 2rem ;
+}
